@@ -4,7 +4,7 @@ This is my final assignment for my getting and cleaning data class on Coursera. 
 This is the data for the project: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 The R script run does the following:
-1. It combines teh training and test sets into one.
+1. It combines the training and test sets into one.
 2. Removes the mean and sd for each measurement.
 3. Names the activities in the data set.
 4. Labels data set with appropriate variable names.
