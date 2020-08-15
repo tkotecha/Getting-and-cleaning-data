@@ -56,9 +56,9 @@ Y <- rbind(y_train, y_test)
 Subject <- rbind(subject_train, subject_test)
 Merged_Data <- cbind(Subject, Y, X)
 
-TidiedData <- Merged_Data %>% select(subject, code, contains("mean"), contains("std"))
+tidieddata <- Merged_Data %>% select(subject, code, contains("mean"), contains("std"))
 
-final <- TidyData %>%
+final <- tidieddata %>%
     group_by(subject, activity) %>%
     summarise_all(mean, na.rm=TRUE)
-write.table(FinalData, "FinalData.txt", row.name=FALSE)
+write.table(final, "final.txt", row.name=FALSE)
