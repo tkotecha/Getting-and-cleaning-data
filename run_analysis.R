@@ -61,4 +61,5 @@ tidieddata <- Merged_Data %>% select(subject, code, contains("mean"), contains("
 final <- tidieddata %>%
     group_by(subject, activity) %>%
     summarise_all(mean, na.rm=TRUE)
+
 write.table(final, "final.txt", row.name=FALSE)
