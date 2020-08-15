@@ -1,0 +1,95 @@
+This is the codebook for the tidy data that describes the variables, the data, and any transformations needed to tidy the data
+
+Identifiers:
+1. Activity: the type of activity conducted by the subject when measurements were conducted
+- LAYING
+- SITTING
+- STANDING
+- WALKING
+- WALKING DOWNSTAIRS
+- WALKING UPSTAIRS
+2. Subject: the person conducting the activity , ranging from 1-30
+
+In terms of assigning all the data frames the following was done:
+
+features: features.txt
+activities: activity_labels.txt
+subject_test: sebject_test.txt
+x_test: x_test.txt
+y_test: y_test.txt
+subject_train: subject_train.txt
+x_train: x_train.txt
+y_train: y_train.txt
+
+
+Measurements of activity were given the following labels:
+timeBodyAcceleration.meanofX
+timeBodyAcceleration.meanofY
+timeBodyAcceleration.meanofZ
+timeBodyAcceleration.standardDeviationofX
+timeBodyAcceleration.standardDeviationofY
+timeBodyAcceleration.standardDeviationofZ
+timegravityAcceleration.meanofX
+timegravityAcceleration.meanofY
+timegravityAcceleration.meanofZ
+timegravityAcceleration.standardDeviationofX
+timegravityAcceleration.standardDeviationofY
+timegravityAcceleration.standardDeviationofZ
+timeBodyAccelerationJerk.meanofX
+timeBodyAccelerationJerk.meanofY
+timeBodyAccelerationJerk.meanofZ
+timeBodyAccelerationJerk.standardDeviationofX
+timeBodyAccelerationJerk.standardDeviationofY
+timeBodyAccelerationJerk.standardDeviationofZ
+timeBodyGyroscope.mean.X
+timeBodyGyroscope.mean.Y
+timeBodyGyroscope.mean.Z
+timeBodyGyroscope.standardDeviationX
+timeBodyGyroscope.standardDeviationY
+timeBodyGyroscope.standardDeviationZ
+timeBodyGyroscopeJerk.meanodX
+timeBodyGyroscopeJerk.meanodY
+timeBodyGyroscopeJerk.meanodZ
+timeBodyGyroscopeJerk.standardDeviationodX
+timeBodyGyroscopeJerk.standardDeviationofY
+timeBodyGyroscopeJerk.standardDeviationofZ
+timeBodyAccelerationMagnitude.mean
+timeBodyAccelerationMagnitude.standardDeviation
+timegravityAccelerationMagnitude.mean
+timegravityAccelerationMagnitude.standardDeviation
+timeBodyAccelerationJerkMagnitude.mean
+timeBodyAccelerationJerkMagnitude.standardDeviation
+timeBodyGyroscopeMagnitude.mean
+timeBodyGyroscopeMagnitude.standardDeviation
+timeBodyGyroscopeJerkMagnitude.mean
+timeBodyGyroscopeJerkMagnitude.standardDeviation
+frequencyBodyAcceleration.mean.X
+frequencyBodyAcceleration.mean.Y
+frequencyBodyAcceleration.mean.Z
+frequencyBodyAcceleration.standarddeviation.X
+frequencyBodyAcceleration.standarddeviation.Y
+frequencyBodyAcceleration.standarddeviation.Z
+frequencyBodyAccelerationJerk.meanX
+frequencyBodyAccelerationJerk.meanY
+frequencyBodyAccelerationJerk.meanZ
+frequencyBodyAccelerationJerkstandarddeviation.X
+frequencyBodyAccelerationJerkstandarddeviation.Y
+frequencyBodyAccelerationJerk.standarddeviation.Z
+frequencyBodyGyroscope.mean.X
+frequencyBodyGyroscope.mean.Y
+frequencyBodyGyroscope.mean.Z
+frequencyBodyGyroscopestandarddeviation.X
+frequencyBodyGyroscopestandarddeviation.Y
+frequencyBodyGyroscopestandarddeviation.Z
+frequencyBodyAccelerationMagnitudemean
+frequencyBodyAccelerationMagnitudestandarddeviation
+frequencyBodybodyAccelerationJerkMagnitudemean
+frequencyBodybodyAccelerationJerkMagnitudestandarddeviation
+frequencyBodybodyGyroscopeMagnitudemean
+frequencyBodybodyGyroscopeMagnitudestandarddeviation
+frequencyBodybodyGyroscopeJerkMagnitudemean
+frequencyBodybodyGyroscopeJerkMagnitudestandarddeviation
+
+
+
+
