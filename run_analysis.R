@@ -36,10 +36,17 @@ Please read R for Mac OS X FAQ (see Help) section 9 and adjust your system prefe
 [History restored from /Users/shilpakotecha/.Rapp.history]
 
 library(dplyr)
-filename <- "Coursera_DS3_Final.zip"
-if(!dir.exists("./UCI HAR Dataset/")){download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", "./motion.zip", mode='wb')
-    unzip("./motion.zip")
-    unlink("./motion.zip")}
+
+filename <- "Coursera_Final.zip"
+
+if(!file.exists(file)){
+  fileurl<- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+  download.file(fileurl, file, method="curl")
+}
+
+if (!file.exists("./Dataset/UCI HAR Dataset")) { 
+  unzip(file) 
+}
 
 
 x_test <- read.table("UCI HAR Dataset/test/X_test.txt", col.names = features$functions)
